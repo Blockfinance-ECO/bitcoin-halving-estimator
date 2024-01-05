@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def bar_plot(
         labels, values,
-        ylabel=None, xlabel=None, title=None, filename=None, yscale='linear'):
+        ylabel=None, xlabel=None, title=None, filename=None, yscale='linear', transparent=False):
     fig, ax = plt.subplots()
 
 
@@ -21,7 +21,7 @@ def bar_plot(
     ax.grid(zorder=5)
 
     if filename is not None:
-        plt.savefig(filename, transparent=True)
+        plt.savefig(filename, transparent=transparent)
     else:
         plt.show()
 
