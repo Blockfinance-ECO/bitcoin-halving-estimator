@@ -32,4 +32,4 @@ last block mined 2024-01-05 12:02:08
 
 and bar plot
 
-![bar_plot](https://github.com/Blockfinance-ECO/bitcoin-halving-estimator/blob/main/res.png?raw=true)
+![bar_plot](https://github.com/Blockfinance-ECO/bitcoin-halving-estimator/blob/master/res.png?raw=true)
