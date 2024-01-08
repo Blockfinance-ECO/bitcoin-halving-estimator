@@ -1,6 +1,10 @@
 # Bitcoin Halving Estimator
 
-Required data:
+## ⚠️ DISCLAIMER ⚠️
+
+THIS SCRIPT COMES WITH ABSOLUTELY NO GUARANTEE OF CORRECTNESS AND BY USING IT OR DATA IT PROVIDES YOU AGREE TO TAKE FULL RESPONSIBILITY OF ALL THE DECISIONS MADE.
+
+## Input data
 
 1. Most recent block timestamp
 2. Average block time
@@ -33,3 +37,7 @@ last block mined 2024-01-05 12:02:08
 and bar plot
 
 ![bar_plot](https://github.com/Blockfinance-ECO/bitcoin-halving-estimator/blob/master/res.png?raw=true)
+
+as well as hourly estimate
+
+![bar_plot_hourly](https://github.com/Blockfinance-ECO/bitcoin-halving-estimator/blob/master/res_hourly.png?raw=true)

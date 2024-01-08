@@ -43,9 +43,9 @@ while dt < estimate_stop:
     t += 1
     p = poipmf(r, t, k)
     daily_p += p
-    if dtt.day != dt.day:
+    if dtt.hour != dt.hour:
         probs.append(daily_p)
-        dates.append(dt.strftime('%d/%m'))
+        dates.append(dt.strftime('%d/%m %H:%M'))
         tot_p += daily_p
         daily_p = 0.0
     dt = dtt
@@ -58,10 +58,12 @@ for j in range(len(probs)):
 for p, d in zip(probs, dates):
     print(d, p)
 
+nb_x = 3
+
 # plot
 bar_plot(
     dates, probs,
     ylabel='$P$',
     xlabel='date',
-    title='BTC halving probability estimate using Poisson process',
-    filename='res.png')
+    title='BTC halving hourly probability estimate using Poisson process',
+    filename='res_hourly.png', every_nth_label=4, figsize=(6.4*nb_x, 4.8), bottom=0.2)
