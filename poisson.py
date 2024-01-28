@@ -2,17 +2,17 @@ from datetime import datetime, timedelta
 from helpers import poipmf, bar_plot
 
 # timestamp of last block
-last_block_ts = 1704705814
+last_block_ts = 1706440191
 
 # average interval between blocks in minutes
-mu = 585.7997 / 60
+mu = 588.2566 / 60
 
 # rate of events per unit of time
 r = 1.0 / mu
 
 # print(r)
 
-current_block = 824453
+current_block = 827781
 halving_interval = 210000
 
 # get the next halving block
@@ -28,8 +28,8 @@ k = halving - current_block
 now = datetime.fromtimestamp(last_block_ts) # datetime.now()
 print('last block mined', now)
 
-estimate_start = datetime(2024, 4, 19, 0, 0, 0)
-estimate_stop = datetime(2024, 4, 27, 0, 0, 0)
+estimate_start = datetime(2024, 4, 17, 0, 0, 0)
+estimate_stop = datetime(2024, 4, 24, 0, 0, 0)
 
 probs = []
 dates = []
