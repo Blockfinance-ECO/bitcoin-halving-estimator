@@ -2,17 +2,17 @@ from datetime import datetime, timedelta
 from helpers import poipmf, bar_plot
 
 # timestamp of last block
-last_block_ts = 1706440191
+last_block_ts = 1709200548
 
 # average interval between blocks in minutes
-mu = 588.2566 / 60
+mu = 588.8077 / 60
 
 # rate of events per unit of time
 r = 1.0 / mu
 
 # print(r)
 
-current_block = 827781
+current_block = 832522
 halving_interval = 210000
 
 # get the next halving block
